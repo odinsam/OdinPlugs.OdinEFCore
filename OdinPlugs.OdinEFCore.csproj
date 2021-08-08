@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="./common.props"/>
+  <PropertyGroup>
+    <Version>$(OdinVersion)</Version>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>OdinPlugs.OdinEFCore</AssemblyName>
+    <RootNamespace>OdinPlugs.OdinEFCore</RootNamespace>
+    <PackageId>OdinPlugs.OdinEFCore</PackageId>
+    <Authors>$(OdinAuthors)</Authors>
+    <Company>$(OdinCompany)</Company>
+    <Copyright>$(OdinCopyright)</Copyright>
+    <Product>$(OdinProduct)</Product>
+    <Description>$(OdinDescription)</Description>
+    <RepositoryType>$(OdinRepositoryType)</RepositoryType>
+    <PackageTags>$(OdinPackageTags)</PackageTags>
+    <Title>OdinPlugs.OdinEFCore</Title>
+    <PackageProjectUrl>$(OdinGitUrl)/OdinPlugs.OdinEFCore</PackageProjectUrl>
+    <RepositoryUrl>$(OdinGitUrl)/OdinPlugs.OdinEFCore</RepositoryUrl>
+    <RepositoryBranch>master</RepositoryBranch>
+    <PackageIcon>icon.png</PackageIcon>
+    <IsPackable>true</IsPackable>
+    <GenerateDocumentationFile>$(OdinGenerateDocumentationFile)</GenerateDocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="images\icon.png" Pack="true" PackagePath=""/>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.5"/>
+    <PackageReference Include="SqlSugarCore" Version="5.0.3.2" />
+    <PackageReference Include="SqlSugarCore.MySqlConnector" Version="5.0.3" />
+  </ItemGroup>
+</Project>

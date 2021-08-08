@@ -10,7 +10,7 @@ using System.Text;
 using System.Transactions;
 using Microsoft.EntityFrameworkCore;
 using MySql.Data.MySqlClient;
-using OdinPlugs.OdinMAF.OdinEF.EFCore.EFExtensions.EFInterface;
+using OdinPlugs.OdinEFCore.EntityFrameworkExtensions.EFInterface;
 using SqlSugar;
 namespace OdinPlugs.OdinEFCore.EntityFrameworkExtensions.EFExtensions
 {
@@ -160,6 +160,7 @@ namespace OdinPlugs.OdinEFCore.EntityFrameworkExtensions.EFExtensions
             Type t = typeof(T); //获取实体类类型对象             
             List<PropertyInfo> propertyInfos = t.GetProperties(BindingFlags.Instance | BindingFlags.Public).ToList(); //获取实体类所有的公共属性 
             Dictionary<string, PropertyInfo> dicPropertys = new Dictionary<string, PropertyInfo>(); //创建实体属性字典集合  
+                                                                                                    //将实体属性中要修改的属性
                                                                                                     //将实体属性中要修改的属性名 添加到字典集合中  键：属性名  值：属性对象  
             propertyInfos.ForEach(p =>
             {

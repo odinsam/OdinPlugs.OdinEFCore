@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 using System.Linq.Expressions;
-using OdinPlugs.OdinMAF.OdinEF.EFCore.EFExtensions.EFInterface;
+using OdinPlugs.OdinEFCore.EntityFrameworkExtensions.EFInterface;
 
 namespace OdinPlugs.OdinEFCore.EntityFrameworkExtensions.EFExtensions
 {
